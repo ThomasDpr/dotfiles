@@ -1,88 +1,272 @@
 {
-    "[python]": {
-        "editor.bracketPairColorization.enabled": false,
-        "editor.guides.bracketPairs": false,
-        "editor.tabSize": 4
+  "[python]": {
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.bracketPairs": false,
+    "editor.tabSize": 2
+  },
+  "rainbowTags.hightlightType": "background-color",
+  "rainbowTags.colors": [
+    "rgba(255, 0, 0, 0.2)",
+    "rgba(0, 255, 0, 0.2)",
+    "rgba(0, 0, 255, 0.2)",
+    "rgba(255, 0, 255, 0.2)",
+    "rgba(0, 255, 255, 0.2)",
+    "rgba(255, 255, 0, 0.2)"
+  ],
+  "rainbowTags.allowEverywhere": true,
+  "rainbowTags.denylistTags": [
+    "p",
+    "hr",
+    "br",
+    "img",
+    "input",
+    "link",
+    "meta",
+    "html",
+    "head",
+    "body"
+  ],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.detectIndentation": false,
+  "editor.fontSize": 14,
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": true,
+  // "editor.rulers": [
+  //     80,
+  //     120
+  // ],
+  "editor.showFoldingControls": "always",
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "editor.fontFamily": "FiraCode-Retina",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block",
+          "comment.block.documentation",
+          "comment.line",
+          "comment.line.double-slash",
+          "comment.line.number-sign",
+          "comment.line.percentage",
+          "comment.line.shebang",
+          "comment.line.double-dash",
+          "comment.line.character",
+          "comment.line.key-value"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  // "editor.tokenCo"
+  "editor.fontWeight": "450",
+  "editor.fontLigatures": true,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 26,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 2,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "emmet.includeLanguages": {
+    "erb": "html"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDelete": false,
+  "files.exclude": {
+    "__pycache__": true,
+    "_site": true,
+    ".asset-cache": true,
+    ".bundle": true,
+    ".ipynb_checkpoints": true,
+    ".pytest_cache": true,
+    ".sass-cache": true,
+    ".svn": true,
+    "**/.DS_Store": true,
+    "**/.egg-info": true,
+    "**/.git": true,
+    "build": true,
+    "coverage": true,
+    "dist": true,
+    "log": true,
+    "node_modules": true,
+    "public/packs": true,
+    "tmp": true
+  },
+  "files.hotExit": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/audits/**": true,
+    "**/coverage/**": true,
+    "**/log/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/vendor/**": true
+  },
+  "notebook.diff.ignoreMetadata": true,
+  "notebook.lineNumbers": "on",
+  "notebook.markup.fontSize": 13,
+  "python.defaultInterpreterPath": "~/.pyenv/shims/python",
+  "python.formatting.provider": "yapf",
+  "python.languageServer": "Pylance",
+  "python.linting.enabled": false,
+  "python.linting.flake8Enabled": false,
+  "python.linting.pylintEnabled": false,
+  "python.terminal.activateEnvironment": false,
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "search.exclude": {
+    // Inherits all glob patterns from the `files.exclude` setting.
+    "**/.venv": true
+  },
+  "telemetry.telemetryLevel": "off",
+  "window.restoreWindows": "none",
+  "window.newWindowDimensions": "maximized",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.editor": "json",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.settings.useSplitJSON": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.panel.defaultLocation": "right",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false
+  },
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "editor.renderWhitespace": "all",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tabnine.experimentalAutoImports": true,
+  "better-comments.highlightPlainText": true,
+  "auto-rename-tag.activationOnLanguage": ["*"],
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist",
+    "css"
+  ],
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "editor.bracketPairColorization.enabled": true,
-    "editor.detectIndentation": false,
-    "editor.fontSize": 14,
-    "editor.guides.bracketPairs": true,
-    "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.renderControlCharacters": true,
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "editor.showFoldingControls": "always",
-    "editor.snippetSuggestions": "top",
-    "editor.tabSize": 2,
-    "emmet.includeLanguages": {
-        "erb": "html"
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.triggerExpansionOnTab": true,
-    "explorer.confirmDelete": false,
-    "files.exclude": {
-        "__pycache__": true,
-        "_site": true,
-        ".asset-cache": true,
-        ".bundle": true,
-        ".ipynb_checkpoints": true,
-        ".pytest_cache": true,
-        ".sass-cache": true,
-        ".svn": true,
-        "**/.DS_Store": true,
-        "**/.egg-info": true,
-        "**/.git": true,
-        "build": true,
-        "coverage": true,
-        "dist": true,
-        "log": true,
-        "node_modules": true,
-        "public/packs": true,
-        "tmp": true
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "files.hotExit": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "files.watcherExclude": {
-        "**/audits/**": true,
-        "**/coverage/**": true,
-        "**/log/**": true,
-        "**/node_modules/**": true,
-        "**/tmp/**": true,
-        "**/vendor/**": true
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "git.enabled": false,
-    "notebook.diff.ignoreMetadata": true,
-    "notebook.lineNumbers": "on",
-    "notebook.markup.fontSize": 13,
-    "python.defaultInterpreterPath": "~/.pyenv/shims/python",
-    "python.formatting.provider": "yapf",
-    "python.languageServer": "Pylance",
-    "python.linting.enabled": false,
-    "python.linting.flake8Enabled": false,
-    "python.linting.pylintEnabled": false,
-    "python.terminal.activateEnvironment": false,
-    "ruby.lint": {
-        "rubocop": true
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "search.exclude": {
-      // Inherits all glob patterns from the `files.exclude` setting.
-      "**/.venv": true
+    {
+      "tag": "=>",
+      "color": "#FFFFFF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "rgba(255, 0, 255, 0.2)",
+      "bold": true,
+      "italic": false
     },
-    "telemetry.telemetryLevel": "off",
-    "window.restoreWindows": "none",
-    "window.newWindowDimensions": "maximized",
-    "workbench.editor.enablePreview": true,
-    "workbench.iconTheme": "vscode-great-icons",
-    "workbench.settings.editor": "json",
-    "workbench.settings.openDefaultSettings": true,
-    "workbench.settings.useSplitJSON": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.panel.defaultLocation": "right",
-    "editor.inlineSuggest.enabled": true,
+    {
+      "tag": "->",
+      "color": "#FFFFFF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "rgba(0, 255, 0, 0.2)",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": ">",
+      "color": "#FFFFFF",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "rgb(30, 144, 255, 0.2)",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "better-comments.multilineComments": true,
+  "indentRainbow.colorOnWhiteSpaceOnly": true,
+  "oneDarkPro.editorTheme": "One Dark Pro Darker",
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "prettier.bracketSameLine": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+    "editor.formatOnSave": true
+  },
+  "files.associations": {
+    "*.html.erb": "erb"
+  }
 }

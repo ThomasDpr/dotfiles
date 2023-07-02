@@ -7,3 +7,31 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
 # NOTE: On Q3 2021, Le Wagon decided to change the Web Dev curriculum default text editor
 alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' && code ."
+
+# Différents alias pour le plugin : "colorls" :
+
+alias ls="colorls"
+alias ll="colorls -l"
+
+
+# Différents alias de raccourcis :
+alias cl="clear" # Efface le terminal
+alias c="clear" # Efface le terminal
+alias h="history" # Affiche l'historique des commandes
+alias q="exit" # Quitte le terminal
+alias ..="cd .." # Remonte d'un dossier
+
+# Différents alias pour les commandes Git :
+alias gs="git status" # Affiche le status du repo
+alias ga="git add" # Ajoute un fichier au repo
+alias gc="git commit -m" # Commit les changements
+alias gp="git push" # Push les changements
+alias gpl="git pull" # Pull les changements
+alias gb="git branch" # Affiche les branches
+
+# Différents alias pour les commandes Rails :
+alias rc="rails c" # Lance la console Rails
+alias rs="rails s" # Lance le serveur Rails
+alias rg="rails g" # Lance le générateur Rails
+alias rd="rails d" # Lance le destructeur Rails
+alias rdm="rails db:migrate" # Lance la migration Rails

@@ -9,5 +9,14 @@
     "key": "cmd+shift+v",
     "command": "pasteAndIndent.action",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+cmd+-",
+    "command": "github.copilot.toggleCopilot"
+  },
+  {
+    "key": "space alt+cmd",
+    "command": "toggleSearchEditorContextLines",
+    "when": "inSearchEditor"
   }
 ]
