@@ -73,3 +73,4 @@ export PYTHONBREAKPOINT=ipdb.set_trace
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(dirname $(gem which colorls))/tab_complete.sh
+export PATH=~/.npm-global/bin:$PATH

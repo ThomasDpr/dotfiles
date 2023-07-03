@@ -97,7 +97,7 @@
     "coverage": true,
     "dist": true,
     "log": true,
-    "node_modules": false,
+    "node_modules": true,
     "public/packs": true,
     "tmp": true
   },
